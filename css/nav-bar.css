@@ -15,3 +15,19 @@
   font-size: 28px;
   color: #2f353e;
 }
+.nav .nav__list-link {
+  position: relative;
+}
+.nav .nav__badge {
+  position: absolute;
+  color: #fde6dd;
+  background-color: #f56129;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -15px;
+  right: -15px;
+}
