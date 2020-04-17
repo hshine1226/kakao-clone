@@ -4,7 +4,23 @@
   font-size: 30px;
   margin-bottom: 30px;
 }
-
+.header .header__header-column {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 33.3%;
+}
+.header .header__start {
+  display: flex;
+  justify-content: flex-start;
+}
+.header .header__center {
+  display: flex;
+  justify-content: center;
+}
+.header .header__end {
+  display: flex;
+  justify-content: flex-end;
+}
 .header .header__title {
   font-weight: 500;
 }
