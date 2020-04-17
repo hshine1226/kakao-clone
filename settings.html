@@ -28,11 +28,9 @@
     </div>
     <header class="header">
       <div class="header__header-column header__start">
-        <span class="header__icon">
-          <a href="more.html">
-            <i class="fas fa-chevron-left"></i>
-          </a>
-        </span>
+        <a href="more.html">
+          <i class="fas fa-chevron-left"></i>
+        </a>
       </div>
       <div class="header__header-column header__center">
         <h1 class="header__title">설정</h1>
@@ -46,27 +44,29 @@
     <main class="settings">
       <section class="settings__sections">
         <ul class="setttings__list">
-          <li class="settings__settings">
-            <span class="settings__icon">
+          <li class="settings__setting">
+            <div class="settings__icon">
               <i class="fas fa-bullhorn"></i>
-            </span>
+            </div>
             <span class="settings__title">공지사항</span>
           </li>
-          <li class="settings__settings">
-            <span class="settings__icon">
+          <li class="settings__setting">
+            <div class="settings__icon">
               <i class="fas fa-flask"></i>
-            </span>
+            </div>
             <span class="settings__title">실험실</span>
           </li>
-          <li class="settings__settings">
-            <div class="settings__column">
-              <span class="settings__icon">
-                <i class="fas fa-info-circle"></i>
-              </span>
-              <span class="settings__title">버전정보</span>
-            </div>
-            <div class="settings__column">
-              <span class="settings__information">최신 버전</span>
+          <li class="settings__setting">
+            <div class="settings__setting version">
+              <div class="settings__column">
+                <div class="settings__icon">
+                  <i class="fas fa-info-circle"></i>
+                </div>
+                <span class="settings__title">버전정보</span>
+              </div>
+              <div class="settings__column">
+                <span class="settings__information">최신 버전</span>
+              </div>
             </div>
           </li>
         </ul>

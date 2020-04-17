@@ -3,6 +3,7 @@
   justify-content: space-between;
   margin-bottom: 35px;
   font-weight: 600;
+  font-size: 15px;
 }
 
 .status-bar i {
@@ -12,8 +13,4 @@
 
 .status-bar .status-bar__battery {
   margin-left: 5px;
-}
-
-.status-bar__clock {
-  font-size: 17px;
 }

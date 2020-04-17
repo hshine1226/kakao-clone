@@ -6,9 +6,14 @@
 @import "friend.css";
 @import "friends.css";
 @import "find.css";
+@import "more.css";
+@import "settings.css";
+@import "chat.css";
+
 * {
   box-sizing: border-box;
 }
+
 body {
   background-color: #ffffff;
   padding: 10px 25px;
@@ -19,6 +24,7 @@ body {
   font-weight: 500;
   font-size: 20px;
 }
+
 a {
   color: inherit;
   text-decoration: none;
