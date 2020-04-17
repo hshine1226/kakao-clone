@@ -1,0 +1,37 @@
+.find .find__header-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.find .header-botton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-botton .header-botton__icon {
+  padding-bottom: 10px;
+}
+
+.find .header-botton__title {
+  font-size: 17px;
+}
+
+.find .find__recommended {
+  margin: 20px 0px;
+  padding: 15px 0px;
+  border-top: 1px solid #dfdfe0;
+  border-bottom: 1px solid #dfdfe0;
+}
+
+.find .find__title {
+  font-size: 15px;
+  opacity: 0.6;
+  padding-bottom: 25px;
+}
+
+.find .friend__add-botton {
+  padding: 10px 15px;
+  background-color: rgb(204, 197, 197);
+}
