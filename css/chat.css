@@ -2,30 +2,44 @@
   padding: 0px 0px;
   background-color: #abc1d1;
 }
-.chat .message__avatar {
+.chat__body .fixed-row {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(167, 193, 209, 0.98);
+}
+
+.chat-screen {
+  background-color: rgba(167, 193, 209, 1);
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.chat-screen .message__avatar {
   width: 50px;
   height: 50px;
   border-radius: 38%;
 }
-
-.chat .incoming-message {
+.chat-screen .chat__messages {
+  padding-top: 20px;
+}
+.chat-screen .incoming-message {
   display: flex;
   justify-content: flex-start;
 }
-.chat .outgoing-message {
+.chat-screen .outgoing-message {
   display: flex;
   justify-content: flex-end;
 }
-.chat .message__content {
+.chat-screen .message__content {
   padding-left: 10px;
 }
-.chat .message__bubble {
+.chat-screen .message__bubble {
   margin-top: 10px;
   padding: 15px 15px;
   background-color: #ffffff;
   border-radius: 20px;
 }
-.chat .message__timestamp {
+.chat-screen .message__timestamp {
   font-size: 15px;
   padding-left: 10px;
   display: flex;
@@ -52,6 +66,7 @@
   width: 70%;
 }
 .chat__write-input {
+  font-size: 20px;
   padding: 15px 5px;
   width: 100%;
   border: 1px solid #969696;
