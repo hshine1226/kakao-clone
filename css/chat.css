@@ -1,5 +1,5 @@
 .chat__body {
-  padding: 0px 0px;
+  /* padding: 0px 0px; */
   background-color: #abc1d1;
 }
 .chat__body .fixed-row {
@@ -11,7 +11,6 @@
 .chat-screen {
   background-color: rgba(167, 193, 209, 1);
   min-height: 100vh;
-  padding-top: 100px;
 }
 
 .chat-screen .message__avatar {
@@ -32,6 +31,9 @@
 }
 .chat-screen .message__content {
   padding-left: 10px;
+}
+.chat-screen li {
+  margin-bottom: 20px;
 }
 .chat-screen .message__bubble {
   margin-top: 10px;

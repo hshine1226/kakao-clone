@@ -8,6 +8,10 @@
 
 .friends .friends__title {
   font-size: 15px;
-  opacity: 0.6;
+  color: rgba(34, 34, 34, 0.7);
   padding-bottom: 25px;
+}
+
+.friends .friend__column {
+  margin-bottom: 20px;
 }

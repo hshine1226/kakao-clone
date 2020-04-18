@@ -34,7 +34,7 @@
 .friend__column .chat__timestamp,
 .friend .friend__gift,
 .friend .friend__now-listening {
-  opacity: 0.7;
+  color: rgba(34, 34, 34, 0.7);
 }
 
 .friend__content .friend__botton-text {
