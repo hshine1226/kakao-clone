@@ -16,7 +16,8 @@
 }
 
 .chat__body {
-  background-color: #abc1d1;
+  /* background-color: #abc1d1; */
+  background-image: url("../images/chatBg.png");
 }
 .chat__body .fixed-row {
   position: fixed;
