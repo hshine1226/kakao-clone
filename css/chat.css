@@ -1,5 +1,4 @@
 .chat__body {
-  /* padding: 0px 0px; */
   background-color: #abc1d1;
 }
 .chat__body .fixed-row {
@@ -8,38 +7,44 @@
   background-color: rgba(167, 193, 209, 0.98);
 }
 
-.chat-screen {
-  background-color: rgba(167, 193, 209, 1);
-  min-height: 100vh;
-}
-
 .chat-screen .message__avatar {
   width: 50px;
   height: 50px;
   border-radius: 38%;
 }
+
 .chat-screen .chat__messages {
-  padding-top: 20px;
+  padding-top: 15px;
+}
+
+.chat-screen .message {
+  display: flex;
+  margin-bottom: 20px;
 }
 .chat-screen .incoming-message {
-  display: flex;
-  justify-content: flex-start;
+  /* display: flex;
+  justify-content: flex-start; */
 }
 .chat-screen .outgoing-message {
   display: flex;
   justify-content: flex-end;
 }
+
 .chat-screen .message__content {
+  display: flex;
+  flex-direction: column;
   padding-left: 10px;
 }
-.chat-screen li {
-  margin-bottom: 20px;
-}
+
 .chat-screen .message__bubble {
+  width: fit-content;
   margin-top: 10px;
   padding: 15px 15px;
   background-color: #ffffff;
   border-radius: 20px;
+}
+.chat-screen .outgoing-message .message__bubble {
+  background-color: #fde500;
 }
 .chat-screen .message__timestamp {
   font-size: 15px;
@@ -47,6 +52,7 @@
   display: flex;
   align-items: flex-end;
 }
+
 .chat__write {
   margin: 0px 0px;
   position: fixed;
