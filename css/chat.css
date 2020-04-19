@@ -16,8 +16,8 @@
 }
 
 .chat__body {
-  /* background-color: #abc1d1; */
-  background-image: url("../images/chatBg.png");
+  background-color: #abc1d1;
+  /* background-image: url("../images/chatBg.png"); */
 }
 .chat__body .fixed-row {
   position: fixed;
@@ -56,8 +56,8 @@
   padding: 15px 15px;
   background-color: #ffffff;
   border-radius: 20px;
-  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
-    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  /* box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025); */
 }
 .chat-screen .outgoing-message .message__bubble {
   background-color: #fde500;
@@ -78,19 +78,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 20px;
-}
-
-.chat__write {
-  bottom: 0px;
   width: 100%;
-  padding: 15px 60px;
-  border: none;
-  font-size: 20px;
 }
 
 .chat__icon-left {
   position: absolute;
+  left: 10px;
 }
 
 .chat__icon-right {
@@ -98,11 +91,32 @@
   right: 10px;
 }
 
+.chat__write {
+  bottom: 0px;
+  width: 100%;
+  padding: 15px 60px;
+  border: none;
+  margin: 0 auto; /*elements를 가운데로 위치시키기 위해서는 left, right margin을 auto로 하면 된다.*/
+  font-size: 20px;
+  transition: width 0.5s ease-in, border-radius 0.5s ease-in,
+    box-shadow 0.5s ease-in, transform 0.5s ease-in-out;
+}
+
+.chat__write:focus {
+  outline: none;
+  width: 80%;
+  transform: translateY(-50px);
+  border-radius: 40px;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
 .chat__icon {
   font-size: 25px;
   transition: opacity 0.3s ease-in-out;
 }
 
+/*sibling selector(~)를 사용하기 위해서는 input 다음에 div 태그를 사용해야 한다.*/
 .chat__write:focus ~ .chat__icon {
   opacity: 0;
 }
