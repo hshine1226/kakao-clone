@@ -25,10 +25,19 @@
   background-color: rgba(167, 193, 209, 0.98);
 }
 
+@keyframes spin {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(1turn);
+  }
+}
 .chat-screen .message__avatar {
   width: 50px;
   height: 50px;
   border-radius: 38%;
+  animation: spin 1s linear infinite;
 }
 
 .chat-screen .chat__messages {
@@ -91,6 +100,21 @@
   right: 10px;
 }
 
+@keyframes float {
+  0% {
+    box-shadow: 0 13px 27px 3px rgba(50, 50, 93, 0.25),
+      0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  }
+  50% {
+    box-shadow: 0 13px 27px -60px rgba(50, 50, 93, 0.25),
+      0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  }
+  100% {
+    box-shadow: 0 13px 27px 3px rgba(50, 50, 93, 0.25),
+      0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  }
+}
+
 .chat__write {
   bottom: 0px;
   width: 100%;
@@ -100,6 +124,7 @@
   font-size: 20px;
   transition: width 0.5s ease-in, border-radius 0.5s ease-in,
     box-shadow 0.5s ease-in, transform 0.5s ease-in-out;
+  animation: float 3s linear infinite forwards;
 }
 
 .chat__write:focus {
@@ -107,7 +132,7 @@
   width: 80%;
   transform: translateY(-50px);
   border-radius: 40px;
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+  box-shadow: 0 13px 27px 3px rgba(50, 50, 93, 0.25),
     0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
 
@@ -119,4 +144,33 @@
 /*sibling selector(~)를 사용하기 위해서는 input 다음에 div 태그를 사용해야 한다.*/
 .chat__write:focus ~ .chat__icon {
   opacity: 0;
+}
+
+@keyframes incomingAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.incoming-message {
+  animation: incomingAnimation 0.5s ease-out forwards; /*forwards는 이게 끝난 뒤에서 value를 유지시키는 것이다.*/
+}
+@keyframes outgoingAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.outgoing-message {
+  animation: outgoingAnimation 0.5s ease-out forwards;
 }
