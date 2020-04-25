@@ -6,6 +6,7 @@
   background-color: #fde500;
   z-index: 3; /*가장 위로 오게 설정, 숫자가 높을수록 위로 온다.*/
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 30px;
@@ -17,4 +18,8 @@
   .bigScreen {
     display: flex;
   }
+}
+
+.bigScreen .bigScreen__text {
+  margin-bottom: 30px;
 }

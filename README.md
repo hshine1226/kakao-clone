@@ -1,8 +1,16 @@
 # kakao-clone
 
-Kakaotalk Clone v2
+> Kakaotalk Clone v2
 
-HTML과 CSS를 숙달시키기 위한 카카오톡 클론입니다.
+HTML과 CSS를 숙달시키기 위한 카카오톡 클론해보는 프로젝트입니다.
 
-github pages 주소:
-https://hshine1226.github.io/kakao-clone/
+## 기능
+
+- Friends
+- Chats
+- Find
+- More
+
+## 링크
+
+- 카카오톡 클론: <https://hshine1226.github.io/kakao-clone/>
