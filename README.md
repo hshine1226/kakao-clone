@@ -2,7 +2,9 @@
 
 > Kakaotalk Clone v2
 
-HTML과 CSS를 숙달시키기 위한 카카오톡 클론해보는 프로젝트입니다.
+HTML과 CSS를 숙달시키기 위한 카카오톡 클론 프로젝트입니다.
+
+<img src="header.png" width="50%" height="50%">
 
 ## 기능
 
